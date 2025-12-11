@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airlines On-Time Performance | Power BI Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-black text-white sticky top-0 z-20 shadow">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white text-black text-sm font-bold">SK</span>
+        <span class="font-semibold tracking-wide text-sm md:text-base">Data Analytics Portfolio</span>
+      </a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a href="index.html#projects" class="hover:text-gray-300">Projects</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-sky-900 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.25em] text-sky-200 mb-2">Case Study</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">Airlines On-Time Performance Dashboard</h1>
+        <p class="text-sky-100 mb-6 text-sm md:text-base">
+          Analysing flight delays and on-time performance by airline, route and time of day to support operations decisions.
+        </p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">Power BI</span>
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">Data Modelling</span>
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">KPIs</span>
+        </div>
+        <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-sky-200 text-sm hover:bg-white hover:text-black transition">
+          ← Back to Portfolio Home
+        </a>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-xl border border-sky-700">
+        <img src="images/airlines-hero.jpg" alt="Airlines Dashboard Overview" class="w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Project Overview</h2>
+      <p class="leading-relaxed text-sm">
+        This project transforms raw flight data into a dashboard that helps understand delays, cancellations and on-time
+        performance across airlines, routes and airports.
+      </p>
+    </div>
+  </section>
+
+  <!-- Workflow -->
+  <section class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6">Workflow</h2>
+      <ul class="list-disc pl-6 space-y-3 text-sm">
+        <li>Imported flight-level CSVs including departure/arrival times, delay minutes, carriers and airports.</li>
+        <li>Created derived fields such as delay categories, time-of-day buckets and route (origin–destination).</li>
+        <li>Modelled data with fact table (Flights) and dimensions (Calendar, Airline, Airport).</li>
+        <li>Built DAX measures for On-Time %, Average Delay, Cancellation Rate and Route Performance.</li>
+        <li>Designed overview, airline and route pages with slicers for date, airline and airport.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Dashboard previews -->
+  <section class="py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6">Dashboard Preview</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/airlines-overview.jpg" class="w-full" alt="Overview">
+          <div class="p-4 text-xs font-medium">Overview – total flights, on-time rate and delay distribution.</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/airlines-airline.jpg" class="w-full" alt="Airline View">
+          <div class="p-4 text-xs font-medium">Airline View – performance comparison across carriers.</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/airlines-route.jpg" class="w-full" alt="Route View">
+          <div class="p-4 text-xs font-medium">Route View – best and worst performing routes by delay.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Key Insights</h2>
+      <ul class="list-disc pl-6 space-y-2 text-sm">
+        <li>Identified peak delay hours and problematic routes.</li>
+        <li>Compared on-time performance across airlines to highlight reliability differences.</li>
+        <li>Provided operations teams with clear visibility into cancellation and delay drivers.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white text-center py-8 text-xs">
+    © 2025 · Sanjay Ker · Airlines On-Time Performance Case Study
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uber Data Analysis | Power BI Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Navbar -->
+  <header class="bg-black text-white sticky top-0 z-20 shadow">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white text-black text-sm font-bold">SK</span>
+        <span class="font-semibold tracking-wide">Sanjay Kerannavar | Data Analytics Portfolio</span>
+      </a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="#workflow" class="hover:text-gray-300">Workflow</a>
+        <a href="#dashboards" class="hover:text-gray-300">Dashboards</a>
+        <a href="#insights" class="hover:text-gray-300">Insights</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-black text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.25em] text-gray-400 mb-2">Case Study</p>
+        <h1 class="text-4xl font-bold mb-4">Uber Trip Data Analysis</h1>
+        <p class="text-lg text-gray-300 mb-6">From Raw CSV to an Interactive Power BI Dashboard for ride performance and cancellation analytics.</p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">Power BI</span>
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">DAX</span>
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">Power Query</span>
+        </div>
+        <!-- Back to Home Button -->
+        <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-500 text-sm hover:bg-white hover:text-black transition">
+          ← Back to Portfolio Home
+        </a>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-800">
+        <!-- Hero / main overview screenshot -->
+        <img src="images/hero.jpg" alt="Uber Dashboard Overview" class="w-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Overview -->
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Project Overview</h2>
+      <p class="leading-relaxed">This project involves end-to-end analysis of Uber trip data using Power BI. The goal was to transform raw CSV data into a fully interactive, insight-driven dashboard that highlights ride demand trends, location performance, vehicle comparisons, cancellations, and key business KPIs for decision-making.</p>
+    </div>
+  </section>
+
+  <!-- Problem Statement -->
+  <section class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Problem Statement</h2>
+      <p class="leading-relaxed">Uber generates a massive volume of trip data daily. The challenge was to clean, model, and visualize this raw data to uncover booking patterns, peak demand time, popular locations, customer & driver cancellations, and vehicle performance in one consolidated analytics solution.</p>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6">Tools & Technologies</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-5 rounded-2xl shadow">Power BI</div>
+        <div class="bg-white p-5 rounded-2xl shadow">Power Query</div>
+        <div class="bg-white p-5 rounded-2xl shadow">DAX</div>
+        <div class="bg-white p-5 rounded-2xl shadow">Excel / CSV</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="workflow" class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-8">Project Workflow</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-semibold">1. Raw Data Import</h3>
+          <p>Imported raw CSV files containing trip date, time, pickup locations, distance, fare, payment mode, ride status, and vehicle type.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">2. Data Cleaning & Transformation</h3>
+          <p>Removed duplicates, handled missing values, standardized date-time formats, and created derived fields (month, vehicle groups, booking status flags) using Power Query.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">3. Data Modeling</h3>
+          <p>Built custom relationships between fact and dimension tables, created calculated columns, and wrote advanced DAX measures for KPIs such as total bookings, conversion rates, cancellation rates, and ride-distance metrics.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">4. Visualization & Dashboard Design</h3>
+          <p>Designed interactive report pages for overview, bookings, vehicles, and insights with buttons for page navigation and slicers for dynamic filtering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Previews -->
+  <section id="dashboards" class="py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-8">Dashboard Pages</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Overview page -->
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/overview.jpg" class="w-full" alt="Overview Dashboard" />
+          <div class="p-4 text-sm font-medium">Overview Dashboard – total bookings, completed rides, revenue & payment mix.</div>
+        </div>
+
+        <!-- Insights page -->
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/insights.jpg" class="w-full" alt="Insights Dashboard" />
+          <div class="p-4 text-sm font-medium">Insights Dashboard – cancellations, reasons analysis and driver vs customer trends.</div>
+        </div>
+
+        <!-- Bookings / locations page -->
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/bookings.jpg" class="w-full" alt="Bookings Dashboard" />
+          <div class="p-4 text-sm font-medium">Bookings Dashboard – top pickup & drop locations and conversion KPIs.</div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-10">
+        <!-- Vehicle detail page (Premier / Auto etc.) -->
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/auto.jpg" class="w-full" alt="Vehicle Detail Dashboard" />
+          <div class="p-4 text-sm font-medium">Vehicle Detail Page – vehicle-wise bookings, distance, ratings & yearly trend.</div>
+        </div>
+
+        <!-- Raw data screenshot -->
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/rawdata.jpg" class="w-full" alt="Raw CSV Data" />
+          <div class="p-4 text-sm font-medium">Raw CSV Data – original trip-level dataset before transformation.</div>
+        </div>
+
+        <div class="flex items-center justify-center text-sm text-gray-500 mt-6 md:mt-0">
+          Explore filters and buttons in the live report to navigate between pages.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Insights -->
+  <section id="insights" class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6">Key Insights</h2>
+      <ul class="list-disc pl-6 space-y-3">
+        <li>Identified peak booking hours and high-demand months using time-series analysis.</li>
+        <li>Highlighted top pickup and drop locations contributing the highest booking value.</li>
+        <li>Separated customer vs driver cancellations and drilled into top cancellation reasons.</li>
+        <li>Compared performance across vehicle types (Auto, Go Mini, Go Sedan, Premier, eBike, XL) on bookings, revenue and distance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Business Impact -->
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Business Impact</h2>
+      <p class="leading-relaxed">The dashboard acts as a single source of truth for operations and strategy teams, enabling them to monitor booking performance, customer behaviour, driver reliability and cancellation patterns, and design targeted interventions to improve ride completion and profitability.</p>
+    </div>
+  </section>
+
+  <!-- Learnings -->
+  <section class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Learnings & Skills Gained</h2>
+      <ul class="list-disc pl-6 space-y-3">
+        <li>Advanced Power BI dashboard building and page navigation design.</li>
+        <li>DAX for building reusable measures and business KPIs.</li>
+        <li>Data modeling & transformations using Power Query for analytics-ready tables.</li>
+        <li>Structuring analytics as a clear data story for stakeholders.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-10 text-center">
+    <p class="text-sm">© 2025 | Data Analytics Portfolio | Uber Power BI Case Study</p>
+  </footer>
+
+</body>
+</html>

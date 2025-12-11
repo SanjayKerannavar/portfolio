@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NVIDIA Business Performance | Power BI Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-black text-white sticky top-0 z-20 shadow">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white text-black text-sm font-bold">SK</span>
+        <span class="font-semibold tracking-wide text-sm md:text-base">Data Analytics Portfolio</span>
+      </a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a href="index.html#projects" class="hover:text-gray-300">Projects</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-slate-900 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.25em] text-gray-400 mb-2">Case Study</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">NVIDIA Business & Product Performance Analysis</h1>
+        <p class="text-gray-300 mb-6 text-sm md:text-base">
+          Analysing revenue, product segments and regional performance using Power BI to understand growth and profitability.
+        </p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">Power BI</span>
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">DAX</span>
+          <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium">Financial KPIs</span>
+        </div>
+        <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-400 text-sm hover:bg-white hover:text-black transition">
+          ← Back to Portfolio Home
+        </a>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-700">
+        <img src="images/nvidia-hero.jpg" alt="NVIDIA Dashboard Overview" class="w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Project Overview</h2>
+      <p class="leading-relaxed text-sm">
+        This project focuses on analysing NVIDIA's revenue and product performance across Gaming, Data Center, Automotive
+        and OEM segments. The goal was to create an executive-ready dashboard that tracks growth, margins and regional trends.
+      </p>
+    </div>
+  </section>
+
+  <!-- Workflow -->
+  <section class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6">Workflow</h2>
+      <ul class="list-disc pl-6 space-y-3 text-sm">
+        <li>Imported raw revenue and shipment CSVs by product, region and quarter.</li>
+        <li>Cleaned and standardised product lines, time periods and regional labels using Power Query.</li>
+        <li>Built a star-schema model with Sales (fact) and Products, Regions, Calendar (dimensions).</li>
+        <li>Created DAX measures: Total Revenue, YoY Growth, Gross Margin %, Segment Contribution %, ASP, and Market Growth Index.</li>
+        <li>Designed overview, segment and region pages with slicers for year, region and product segment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Dashboard previews -->
+  <section class="py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6">Dashboard Preview</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/nvidia-overview.jpg" class="w-full" alt="NVIDIA Overview">
+          <div class="p-4 text-xs font-medium">Company Overview – revenue, YoY growth and segment split.</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/nvidia-segment.jpg" class="w-full" alt="Segment Performance">
+          <div class="p-4 text-xs font-medium">Segment Performance – Gaming vs Data Center vs Automotive.</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="images/nvidia-region.jpg" class="w-full" alt="Regional Trends">
+          <div class="p-4 text-xs font-medium">Regional Trends – revenue and growth by geography.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Key Insights</h2>
+      <ul class="list-disc pl-6 space-y-2 text-sm">
+        <li>Identified top revenue drivers across Gaming and Data Center segments.</li>
+        <li>Highlighted high-growth regions benefiting from AI and cloud adoption.</li>
+        <li>Analysed margin differences between product lines and their impact on profitability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white text-center py-8 text-xs">
+    © 2025 · Sanjay Ker · NVIDIA Business Performance Case Study
+  </footer>
+
+</body>
+</html>
